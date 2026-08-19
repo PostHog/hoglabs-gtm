@@ -121,5 +121,6 @@ has settings for this, and the failure smells like drill 8.
 - [ ] MDE versus sample size cross-check done
 - [ ] MCP answered the exposure questions
 
-Next: [Lab 07, the diagnosis drills](07-sabotage.md), where all of this
-becomes muscle.
+Next: [Lab 07, self-driving](07-self-driving.md), and then
+[Lab 08, the diagnosis drills](08-sabotage.md), where all of this becomes
+muscle.

@@ -1,4 +1,4 @@
-# Lab 07: The diagnosis drills (~90 min)
+# Lab 08: The diagnosis drills (~90 min)
 
 ## Why a customer cares
 
@@ -64,7 +64,7 @@ in month 2 will.
    the [health check][health-checks]), the concrete fix, and the docs
    link. Three to six sentences, like you'd actually post in their
    Slack channel.
-5. Then read `answers/07-sabotage.md` for that drill and compare. Note
+5. Then read `answers/08-sabotage.md` for that drill and compare. Note
    what you missed in your reply, not just whether you found the cause.
 6. Heal, then next drill.
 

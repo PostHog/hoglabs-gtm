@@ -35,10 +35,11 @@ tickets that rhyme with them.
 | [04](labs/04-replay.md) | Session replay: rage-clicks, masking, cost levers, Doctor | 35 min |
 | [05](labs/05-flags.md) | Feature flags: gating, targeting, local evaluation, proxy | 80 min |
 | [06](labs/06-experiments.md) | Experiments: run one, read it honestly | 50 min |
-| [07](labs/07-sabotage.md) | The diagnosis drills: 12 blind failure modes | 90 min+ |
+| [07](labs/07-self-driving.md) | Self-driving: run the onboarding wizard, read what it turned on | 35 min |
+| [08](labs/08-sabotage.md) | The diagnosis drills: 12 blind failure modes | 90 min+ |
 
-Labs 00 to 02 are the foundation, so do them in order. Labs 03 to 06
-can flex toward what your book uses. Lab 07 is the point of the whole
+Labs 00 to 02 are the foundation, so do them in order. Labs 03 to 07
+can flex toward what your book uses. Lab 08 is the point of the whole
 thing.
 
 Timings are honest estimates for someone new to PostHog. Going deep is
@@ -62,7 +63,7 @@ cd onboarding-csm-lab
 
 ```
 app-hoghabits/    the app: a fake B2B habit tracker, ships UNinstrumented
-labs/             the eight labs
+labs/             the nine labs
 answers/          answer keys (per-drill spoilers, read the rules)
 notes/            your output: the twelve drill replies
 sabotage/         the drill runner + encoded failure modes (don't peek)
@@ -73,7 +74,7 @@ TROUBLESHOOTING.md  Next.js quirks that are NOT PostHog problems
 ## Honesty contract
 
 Three things could spoil your own training: `sabotage/patches/` (which
-is why it's encoded), `answers/07-sabotage.md`, and running `git diff`
+is why it's encoded), `answers/08-sabotage.md`, and running `git diff`
 during a drill. The drills only work if you sit in the not-knowing
 until your customer reply is written. Nobody is checking up on you
 here, but the customer conversations in month 2 will.
@@ -81,12 +82,14 @@ here, but the customer conversations in month 2 will.
 ## Scope
 
 Covered: implementation, product analytics, identity and persons and
-groups, session replay, feature flags, experiments, billing basics,
-and MCP throughout.
+groups, session replay, feature flags, experiments, self-driving,
+billing basics, and MCP throughout.
 
-Not covered: error tracking, LLM and AI observability, surveys, data
-pipelines and CDP, logs, warehouse. The app carries hook points for each,
-so they're straightforward to add if your book needs them.
+Not covered as instrumentation: error tracking, LLM and AI observability,
+surveys, data pipelines and CDP, logs, warehouse. The app carries hook
+points for each, so they're straightforward to add if your book needs
+them. Lab 07's wizard does turn some of these on as products, which is a
+different thing from writing the code that feeds them.
 
 ## Found a problem?
 

@@ -30,7 +30,7 @@ checklist in the lab itself, plus these spot-checks:
   ad blocker on your own browser, or you browsed in the private window
   from Lab 02.
 
-## Lab 07: [07-sabotage.md](07-sabotage.md)
+## Lab 08: [08-sabotage.md](08-sabotage.md)
 
 Full spoilers, one entry per drill — root cause, evidence trail,
 give-away, model customer reply. Only after your reply is written.

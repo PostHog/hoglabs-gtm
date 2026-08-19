@@ -85,7 +85,7 @@ Set the first without the second and every event, flag check, and replay
 upload 404s. Check both, and remember `next.config.js` is only read at
 server start, so restart `npm run dev` after changing it.
 
-Fastest fix if you're partway through Lab 07: `node
+Fastest fix if you're partway through Lab 08: `node
 sabotage/sabotage.js heal` rewrites the whole reference set consistently.
 To go back to no proxy at all, set `api_host` to your
 `NEXT_PUBLIC_POSTHOG_HOST` and leave the rewrites commented.

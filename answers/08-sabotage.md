@@ -1,4 +1,4 @@
-# Answer key — Lab 07 diagnosis drills
+# Answer key — Lab 08 diagnosis drills
 
 > ⚠️ **Spoilers for all twelve drills.** Open per-drill, only after
 > your customer reply is written. Each entry: root cause → the evidence

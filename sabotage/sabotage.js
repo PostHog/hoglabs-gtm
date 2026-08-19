@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * The blind-sabotage runner for Lab 07.
+ * The blind-sabotage runner for Lab 08.
  *
  *   node sabotage/sabotage.js prepare   # save your lab work, install the reference solution
  *   node sabotage/sabotage.js 7         # apply drill 7 and print the customer's report

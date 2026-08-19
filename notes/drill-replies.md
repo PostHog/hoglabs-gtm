@@ -1,4 +1,4 @@
-# Drill replies (Lab 07)
+# Drill replies (Lab 08)
 
 > One entry per drill, written **before** opening the answer key. This
 > file becomes your snippet library, because real tickets rhyme with
