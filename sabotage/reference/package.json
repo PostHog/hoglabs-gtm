@@ -2,7 +2,7 @@
   "name": "hoghabits",
   "version": "1.0.0",
   "private": true,
-  "description": "HogHabits — the deliberately-instrumentable habit tracker for PostHog CSM onboarding labs",
+  "description": "HogHabits — the deliberately-instrumentable habit tracker for the PostHog GTM onboarding labs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

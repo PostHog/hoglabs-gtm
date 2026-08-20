@@ -12,7 +12,7 @@ to enable, which signal sources to wire into the inbox, which scouts to
 run, which session recordings to point an LLM at. Every one of those has
 a cost or a noise consequence. The first question you'll get after a
 customer runs it is some version of "what did that just turn on, and what
-will it cost me?" A CSM who has watched the wizard reason out loud once
+will it cost me?" Someone who has watched the wizard reason out loud once
 can answer that. One who hasn't can only read the docs back.
 
 This lab is deliberately thin. The goal is to *feel* the onboarding, the

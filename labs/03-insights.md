@@ -91,7 +91,7 @@ them.
 3. `habit_checked_in`
 4. `upgrade_clicked`
 
-Conversion window: 14 days. Read it like a CSM rather than a dashboard.
+Conversion window: 14 days. Read it like a customer conversation rather than a dashboard.
 
 The step-1-to-2 drop is the activation gap: those are the 8 "browser"
 archetypes who signed up and never created a habit. In a real account,
