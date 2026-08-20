@@ -3,9 +3,9 @@
 > **The rule that governs everything in these labs:** every event, every
 > sabotage, every piece of junk data goes into **your own free-tier
 > organization**, the one you create in this lab. Never a customer's
-> project. Never PostHog's internal project 2 (`🎉 PostHog App + Website`,
-> which is live production data people report off). If you're ever unsure
-> which project you're pointed at, stop and check.
+> project. Never PostHog's own internal production project (which holds
+> live data people report off). If you're ever unsure which project
+> you're pointed at, stop and check.
 
 ## Why this matters
 

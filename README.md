@@ -5,8 +5,8 @@
 > These labs deliberately generate junk data and broken implementations.
 > Everything runs against your own free-tier PostHog org, which Lab 00
 > has you create and name `hoglab`. Never a customer's project. Never
-> PostHog's internal project 2 (`🎉 PostHog App + Website`), which holds
-> live production data. If you're ever unsure which project you're
+> PostHog's own internal production project, which holds live data the
+> company reports off. If you're ever unsure which project you're
 > pointed at, stop and check.
 
 ## What this is
