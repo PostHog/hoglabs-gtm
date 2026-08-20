@@ -1,4 +1,4 @@
-# PostHog CSM labs
+# HogLabs: PostHog labs for GTM
 
 > ## The one rule
 >
@@ -54,8 +54,8 @@ better than going fast.
 ## Quick start
 
 ```bash
-git clone https://github.com/PostHog/onboarding-csm-lab.git
-cd onboarding-csm-lab
+git clone https://github.com/PostHog/hoglabs-gtm.git
+cd hoglabs-gtm
 # then open labs/00-setup.md and follow it
 ```
 

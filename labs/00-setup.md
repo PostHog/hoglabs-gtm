@@ -11,7 +11,7 @@
 
 You're about to do, step by step, exactly what every customer in your
 book once did: sign up self-serve, pick a region, create a project, walk
-the onboarding wizard, and find the billing page. Most CSMs never see
+the onboarding wizard, and find the billing page. Most new starters never see
 this flow because someone else set their access up. Pay attention to how
 it *feels*, and to where you hesitated, what was obvious, and what
 wasn't. That first-hand memory is worth more than any doc when a

@@ -10,7 +10,7 @@ Numbers say *what* happened, and replay shows *why*. The funnel says 40%
 drop at step 2, and the replay shows them hunting for a button that's
 below the fold. Replay is also PostHog's most emotionally persuasive
 demo, since watching a real user struggle sells itself, while being its
-most common source of cost and privacy questions. A CSM needs both
+most common source of cost and privacy questions. You need both
 halves, the wow and the settings page.
 
 ## 1. Turn it on and read the settings

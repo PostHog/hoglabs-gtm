@@ -122,7 +122,7 @@ function copyReference() {
 }
 
 // Rough check: has anyone actually instrumented this app yet? Used only to
-// warn, never to block, since a CSM may legitimately have named things
+// warn, never to block, since you may legitimately have named things
 // differently or skipped a lab.
 function looksInstrumented() {
   try {

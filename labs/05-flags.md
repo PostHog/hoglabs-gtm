@@ -146,7 +146,7 @@ Restart, then run
 
 What just happened: posthog-node fetched all flag *definitions* once
 using the `phx_` key, and now evaluates any user against them in-process,
-with no network round-trip per user. Three CSM-grade facts follow.
+with no network round-trip per user. Three facts worth taking into a customer conversation follow.
 
 Resilience: definitions are cached, so flags keep answering through a
 flags-endpoint outage, which is the production answer to a page that

@@ -8,7 +8,7 @@
 An experiment is a flag plus discipline: a hypothesis, a primary metric,
 a variant split, and the statistics to say whether the difference is
 real. Customers get enormous value from experiments, and they also
-p-hack, peek early, change splits mid-flight, and ship on noise. A CSM
+p-hack, peek early, change splits mid-flight, and ship on noise. Someone
 who can read results honestly, including "this isn't significant and
 here's what that means", is worth more than one who can only click
 Create.

@@ -10,7 +10,7 @@
  *                                       # X actually get sent?" without
  *                                       # touching a real project.
  *
- * Why this exists: one CSM clicking around for an hour cannot produce a
+ * Why this exists: one person clicking around for an hour cannot produce a
  * retention curve, a lifecycle chart, or an experiment readout. This
  * script backfills a small, bounded population — ~40 users in 4
  * workspaces over the last 21 days — so Labs 03 and 06 have something
