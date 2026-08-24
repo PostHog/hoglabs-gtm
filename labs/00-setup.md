@@ -42,9 +42,16 @@ Still in your new org:
    requests, but read what's on your screen rather than trusting that.
    Allowances change, which is why this is a page you look up rather
    than a number you memorize.
-3. Set a billing limit on product analytics. You're on free tier so
-   nothing can charge you, but do it anyway: finding this control now
-   means you can point a panicking customer at it later in seconds.
+3. Look for the billing limit control on product analytics. You won't
+   find one, and that's the lesson: limits only appear once a product is
+   on a paid subscription, because on free tier there's nothing to cap.
+   Your free allowance *is* the limit, and once you exceed it we stop
+   ingesting until the period resets. Read
+   [billing limits and alerts](https://posthog.com/docs/billing/limits-alerts)
+   so you know what a paying customer sees on this page: a "Set billing
+   limit" control per product, and alert emails at 80% and 100% of both
+   the limit and the free allotment. A customer panicking about a bill
+   is on a paid plan, so this is the page you send them to.
 4. Skim the add-ons (group analytics, platform packages). Note which
    things are usage-priced versus flat add-ons. You don't need to
    memorize any of it. You need to know where the page is. Note group
@@ -106,7 +113,8 @@ this project is the safe place to practise with it.
 ## Done when
 
 - [ ] Your own org and `hoglab` project exist, region chosen on purpose
-- [ ] Billing limit set, and you know where the allowances page is
+- [ ] You know where the allowances page is, and why free tier has no
+      billing limit control
 - [ ] App runs at localhost:3000, fully clickable, zero events in PostHog
 - [ ] MCP connected and verified to point at `hoglab`
 
