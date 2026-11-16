@@ -58,7 +58,7 @@ export default function HabitsPage() {
     await fetch('/api/checkin', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: user?.email, habit: habit.name, streak: habit.streak + 1 }),
+      body: JSON.stringify({ email: user?.email, habit: habit.name, streak: habit.streak + 1, workspace: user?.workspace }),
     }).catch(() => {})
   }
 

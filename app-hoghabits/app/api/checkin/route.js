@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { getPostHogServer } from '../../../lib/posthog-server'
 
 export async function POST(request) {
-  const { email, habit, streak } = await request.json()
+  const { email, habit, streak, workspace } = await request.json()
 
   if (!email || !habit) {
     return NextResponse.json({ error: 'email and habit are required' }, { status: 400 })
