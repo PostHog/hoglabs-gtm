@@ -57,9 +57,11 @@ Nothing to do with PostHog.
 In rough order of likelihood:
 
 1. `.env.local` doesn't exist or still has placeholder values (then:
-   restart dev — see above).
+   restart dev — see above). If you created it before the variable was
+   renamed, change `NEXT_PUBLIC_POSTHOG_KEY` to
+   `NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN` to match `.env.local.example`.
 2. Wrong key: you pasted the `phs_` secret key where the `phc_`
-   project key goes.
+   project token goes.
 3. An ad blocker on your own browser is eating the requests —
    check the Network tab for blocked `/e/` or `/ingest/` calls.
    (Congratulations, you've just reproduced drill 11 by accident.)

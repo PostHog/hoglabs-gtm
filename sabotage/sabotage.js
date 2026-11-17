@@ -154,7 +154,7 @@ function getPostHogNode(env) {
   const { createRequire } = require('module')
   const req = createRequire(path.join(APP, 'package.json'))
   const { PostHog } = req('posthog-node')
-  return new PostHog(env.NEXT_PUBLIC_POSTHOG_KEY, {
+  return new PostHog(env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN, {
     host: env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
   })
 }

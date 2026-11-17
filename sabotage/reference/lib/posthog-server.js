@@ -7,7 +7,7 @@ let client = null
 
 export function getPostHogServer() {
   if (!client) {
-    client = new PostHog(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
+    client = new PostHog(process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN, {
       // Server events go DIRECT to PostHog, not through the /ingest
       // proxy — ad blockers live in browsers, not on your server.
       host: process.env.NEXT_PUBLIC_POSTHOG_HOST,

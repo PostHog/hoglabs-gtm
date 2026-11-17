@@ -19,7 +19,7 @@ before the app hydrates. Write:
 ```js
 import posthog from 'posthog-js'
 
-posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
+posthog.init(process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN, {
   api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
   defaults: '2026-08-30',
   debug: process.env.NODE_ENV === 'development',
@@ -45,7 +45,7 @@ your ground truth for the whole lab.
 
 The key comes from env, never hardcoded. The `NEXT_PUBLIC_` prefix is a
 *Next.js* mechanism meaning "expose to the browser", which is fine for
-the `phc_` project key and catastrophic for anything secret.
+the `phc_` project token and catastrophic for anything secret.
 
 ## 2. Verify in PostHog
 
@@ -131,7 +131,7 @@ let client = null
 
 export function getPostHogServer() {
   if (!client) {
-    client = new PostHog(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
+    client = new PostHog(process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN, {
       host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
       flushAt: 1,      // dev: send immediately
       flushInterval: 0,

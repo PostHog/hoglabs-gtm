@@ -72,8 +72,8 @@ cp .env.local.example .env.local
 
 Fill in `.env.local`:
 
-- `NEXT_PUBLIC_POSTHOG_KEY` is your project API key, from **Settings →
-  Project → General**. Note it starts with `phc_`. This key is public by
+- `NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN` is your project token, from **Settings →
+  Project → General**. Note it starts with `phc_`. This token is public by
   design, since it can only ingest and never read. Hold that thought
   until drill 12.
 - `NEXT_PUBLIC_POSTHOG_HOST` should match the region you chose in step 1.

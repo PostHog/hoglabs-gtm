@@ -380,7 +380,7 @@ server-only env and make the call from an API route.
 (The value in this drill is a stand-in, not a real key, so the exercise
 doesn't expose anything of yours.)
 
-**Give-away:** the key prefix. `phc_` (project key) is public by design
+**Give-away:** the key prefix. `phc_` (project token) is public by design
 — ingest-only, can't read anything. `phs_` (project secret key, what the
 app uses for local evaluation since Lab 05) is a secret, but scoped: with
 `feature_flag:read` it can read flag definitions and nothing else, and it
@@ -390,7 +390,7 @@ entirely "which prefix?"
 
 **Model reply:**
 > The researcher is right and this one's worth acting on today. Two
-> different keys are in play: the `phc_` project key is public by
+> different keys are in play: the `phc_` project token is public by
 > design (ingest-only — fine in the browser), but what's in your bundle
 > is a `phx_` *personal* API key, which can read and modify your
 > PostHog project with the owner's permissions. Please [rotate it now]
