@@ -8,7 +8,7 @@
 // Do NOT also add a PostHogProvider component — the two approaches
 // must never be combined.
 //
-// Your project API key and host belong in .env.local (copy
+// Your project token and host belong in .env.local (copy
 // .env.local.example) — never hardcoded here.
 //
 // See labs/01-instrument.md, step 2.

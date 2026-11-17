@@ -5,7 +5,7 @@ import posthog from 'posthog-js'
 
 const host = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com'
 
-posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
+posthog.init(process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN, {
   // Lab 05 step 6 switched this from the direct host to the reverse
   // proxy configured in next.config.js. Ad blockers block
   // *.i.posthog.com; they don't block your own domain.

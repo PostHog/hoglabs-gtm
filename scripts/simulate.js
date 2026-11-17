@@ -262,13 +262,13 @@ if (DRY) {
 // ---------- send ----------
 async function send() {
   const env = loadEnv()
-  if (!env.NEXT_PUBLIC_POSTHOG_KEY || env.NEXT_PUBLIC_POSTHOG_KEY.includes('YOUR_')) {
-    console.error('NEXT_PUBLIC_POSTHOG_KEY in app-hoghabits/.env.local is not set.')
+  if (!env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN || env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN.includes('YOUR_')) {
+    console.error('NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN in app-hoghabits/.env.local is not set.')
     process.exit(1)
   }
   const req = createRequire(path.join(APP, 'package.json'))
   const { PostHog } = req('posthog-node')
-  const ph = new PostHog(env.NEXT_PUBLIC_POSTHOG_KEY, {
+  const ph = new PostHog(env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN, {
     host: env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
   })
 
