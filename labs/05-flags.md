@@ -210,9 +210,15 @@ Read the
 implementing it here is optional stretch work. Two things are worth
 carrying to a call. It's the answer to both "our page flashes the wrong
 content" and "we get React hydration errors after adding flags", which
-customers report as separate bugs. And PostHog has a pre-release
-`@posthog/next` package that does server-side bootstrapping for you, so
-check whether it has shipped before advising anyone to hand-roll it.
+customers report as separate bugs. And PostHog ships
+[`@posthog/next`](https://posthog.com/docs/libraries/next-js/posthog-next),
+a Next.js package that does server-side flag bootstrapping for you, along
+with shared client/server identity and a built-in proxy. It's on npm but
+still pre-release (0.x, API may change), and its docs point production
+apps to the standard setup. So for a customer: it's worth evaluating
+before they hand-roll bootstrapping, especially on a new App Router
+project, but check its current status first, and know that its
+bootstrapping opts routes into dynamic rendering.
 
 ## 8. Do it again via MCP
 
