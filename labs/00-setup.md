@@ -60,9 +60,9 @@ Still in your new org:
 
 ## 3. Get the app running
 
-You need Node 18.18+ (`node -v`, and if you have Claude Code running you
-almost certainly have it) and this repo on your machine, cloned or
-downloaded.
+You need Node 22.22 or newer (`node -v`) and this repo on your machine,
+cloned or downloaded. The app itself runs on Node 20.20+, but the wizard
+in Lab 07 needs 22.22+, so set that up now.
 
 ```bash
 cd app-hoghabits

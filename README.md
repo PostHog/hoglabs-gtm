@@ -47,7 +47,7 @@ better than going fast.
 
 ## Prerequisites
 
-- Node 18.18+ (`node -v`)
+- Node 22.22+ (`node -v`). The app runs on 20.20+, but the Lab 07 wizard needs 22.22+
 - This repo, cloned or downloaded, either is fine
 - A browser, a `@posthog.com` email, and no PostHog knowledge at all
 
