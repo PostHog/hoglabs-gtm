@@ -18,7 +18,7 @@ posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
   // Pins the modern behaviour bundle. Among other things this makes
   // $pageview fire on client-side route changes (history API), which
   // an App Router app navigates with. Removing it is drill 11.
-  defaults: '2026-01-30',
+  defaults: '2026-08-30',
 
   // Loud in dev, quiet in prod.
   debug: process.env.NODE_ENV === 'development',

@@ -21,7 +21,7 @@ import posthog from 'posthog-js'
 
 posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
   api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
-  defaults: '2026-01-30',
+  defaults: '2026-08-30',
   debug: process.env.NODE_ENV === 'development',
 })
 ```
@@ -31,8 +31,10 @@ start.
 
 Three things worth understanding rather than just typing:
 
-`defaults: '2026-01-30'` pins the modern behaviour bundle. The part
-you'll care about most is that `$pageview` fires on client-side route
+`defaults: '2026-08-30'` pins the modern behaviour bundle. Each date
+in the [config docs](https://posthog.com/docs/libraries/js/config)
+switches on everything from the dates before it. The part you'll care
+about most is the oldest piece: `$pageview` fires on client-side route
 changes via the history API. This app navigates like an SPA, so without
 `defaults` you'd get one pageview per hard reload and nothing else.
 Customers who integrated years ago and never revisited their snippet
