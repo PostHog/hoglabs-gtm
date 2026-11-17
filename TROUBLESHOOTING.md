@@ -132,5 +132,7 @@ especially `instrumentation-client.js` and config changes.
 
 ## Node version errors on `npm install`
 
-Next 16 needs Node 18.18+. `node -v`, and if you use a version
-manager, `nvm use 20` (or similar) before installing.
+Use Node 22.22 or newer. Next 16 needs 20.9+, `posthog-node` needs
+20.20+, and the Lab 07 wizard needs 22.22+. Check with `node -v`, and if
+you use a version manager, `nvm install 22 && nvm use 22` (or similar)
+before installing.
