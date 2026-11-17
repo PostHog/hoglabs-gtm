@@ -77,9 +77,10 @@ Fill in `.env.local`:
   design, since it can only ingest and never read. Hold that thought
   until drill 12.
 - `NEXT_PUBLIC_POSTHOG_HOST` should match the region you chose in step 1.
-- `POSTHOG_PERSONAL_API_KEY`: create one at **Settings → User → Personal
-  API keys** with *feature flags read* scope. It starts with `phx_`, and
-  this one is a secret. Lab 05 uses it.
+- `POSTHOG_SECRET_API_KEY`: create one at **Settings → Project → Project
+  secret API keys** with the *Local feature flag evaluation* preset (the
+  `feature_flag:read` scope). It starts with `phs_`, it's only shown
+  once, and this one is a secret. Lab 05 uses it.
 
 Then:
 

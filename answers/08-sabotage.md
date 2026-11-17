@@ -381,9 +381,12 @@ server-only env and make the call from an API route.
 doesn't expose anything of yours.)
 
 **Give-away:** the key prefix. `phc_` (project key) is public by design
-— ingest-only, can't read anything. `phx_` (personal key) can read and
-*change* the project with the key-owner's permissions. The severity
-question is entirely "which prefix?"
+— ingest-only, can't read anything. `phs_` (project secret key, what the
+app uses for local evaluation since Lab 05) is a secret, but scoped: with
+`feature_flag:read` it can read flag definitions and nothing else, and it
+belongs in server env. `phx_` (personal key) can read and *change* the
+project with the key-owner's permissions. The severity question is
+entirely "which prefix?"
 
 **Model reply:**
 > The researcher is right and this one's worth acting on today. Two

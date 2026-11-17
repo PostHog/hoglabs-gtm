@@ -58,7 +58,7 @@ In rough order of likelihood:
 
 1. `.env.local` doesn't exist or still has placeholder values (then:
    restart dev — see above).
-2. Wrong key: you pasted the `phx_` personal key where the `phc_`
+2. Wrong key: you pasted the `phs_` secret key where the `phc_`
    project key goes.
 3. An ad blocker on your own browser is eating the requests —
    check the Network tab for blocked `/e/` or `/ingest/` calls.

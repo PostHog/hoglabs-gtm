@@ -134,18 +134,23 @@ Inside `GET` matters. `email` is read from the request in that function,
 so at the top of the file it isn't in scope and the module throws
 `ReferenceError: email is not defined` before the route can run.
 
-And in `lib/posthog-server.js`, add the personal API key to the client
-options, since this is what it's for:
+And in `lib/posthog-server.js`, add the project secret API key to the
+client options, since this is what it's for:
 
 ```js
-personalApiKey: process.env.POSTHOG_PERSONAL_API_KEY,
+secretKey: process.env.POSTHOG_SECRET_API_KEY,
 ```
+
+`secretKey` needs posthog-node 5.40.0 or later. Older versions, and plenty
+of customer codebases, pass the same key as `personalApiKey`, which still
+works as a deprecated alias. The option name doesn't change what the key
+can do.
 
 Restart, then run
 `curl "http://localhost:3000/api/flags?email=you@hoghabits.test"`.
 
 What just happened: posthog-node fetched all flag *definitions* once
-using the `phx_` key, and now evaluates any user against them in-process,
+using the `phs_` key, and now evaluates any user against them in-process,
 with no network round-trip per user. Three facts worth taking into a customer conversation follow.
 
 Resilience: definitions are cached, so flags keep answering through a
