@@ -27,7 +27,8 @@ posthog.identify(email, { email, name })
 ```
 
 3. Sign up in the app as, say, `you@hoghabits.test`.
-4. In PostHog, open **Data → People → Persons** and find `you@hoghabits.test`.
+4. In PostHog, open **People and groups → Persons** (in the new
+   design, **People → Persons**) and find `you@hoghabits.test`.
    Look at their event timeline: your anonymous landing-page browsing is
    there, attached to the person, from before they signed up.
 
@@ -135,8 +136,9 @@ workspace name. Do the same for a client-side event such as
 signed up. Three wires, three pieces of evidence.
 
 If you want to see the Groups tab itself, that's what a customer with
-the add-on gets: **Data → People → Groups**, one row per workspace, with
-group-level insights and breakdowns. Have a teammate with a paid project
+the add-on gets: **People and groups → Groups** (in the new design,
+**People → Groups**), one row per workspace, with group-level
+insights and breakdowns. Have a teammate with a paid project
 show you once, or look at a customer's project when you next have reason
 to. You don't need it to finish this lab.
 
@@ -209,7 +211,7 @@ posthog.capture('prefs_updated', {
 })
 ```
 
-Open your person in **Data → People → Persons** and look at the
+Open your person in **People and groups → Persons** and look at the
 properties. `theme` is now `light`, because `$set` overwrites. But
 `first_seen_plan` is still `free`, because `$set_once` declined to touch
 a property that already had a value. The `enterprise` you just sent was
