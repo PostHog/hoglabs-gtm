@@ -15,21 +15,29 @@ halves, the wow and the settings page.
 
 ## 1. Turn it on and read the settings
 
-Go to **Project settings → Session replay** and enable recording. Before
-you leave the page, actually read it.
+Open **Session replay** in PostHog and go to its **Settings** tab. If it
+isn't there, append `/replay/settings` to your PostHog host, which jumps
+straight to the replay settings regardless of where the nav has moved
+them to. Turn on **Record user sessions**. Before you leave the page,
+actually read it.
 
-Masking: input masking is on by default, and note the options for masking
-all text versus inputs only. For a fintech or health customer this page
-is the first conversation rather than an afterthought.
+Masking, under **Privacy and masking**
+(`/replay/settings#selectedSetting=replay-masking`): input masking is on
+by default, and note the options for masking all text versus inputs only.
+For a fintech or health customer this page is the first conversation
+rather than an afterthought. The [privacy docs][replay-privacy] cover the
+finer-grained controls set in code.
 
-Minimum duration: set it to 2 seconds. The [health check][health-checks]
-recommends at least this, because every recording counts toward the 5K
-free allowance and toward billing on paid accounts, and sub-2-second
-bounces are billable noise.
+Minimum duration, under **Recording conditions**
+(`/replay/settings#selectedSetting=replay-triggers`): set it to 2 seconds.
+The [health check][health-checks] recommends at least this, because every
+recording counts toward the 5K free allowance and toward billing on paid
+accounts, and sub-2-second bounces are billable noise.
 
-Sampling and conditional recording (by feature flag or URL): know these
-exist, because they're the cost-control levers for high-traffic
-customers.
+Sampling and triggers (URL, event, and feature flag), in the same
+**Recording conditions** section: know these exist, because they're the
+cost-control levers for high-traffic customers. The
+[recording controls docs][replay-controls] explain how they combine.
 
 ## 2. Record a session
 
@@ -94,3 +102,5 @@ Next: [Lab 05, feature flags](05-flags.md)
 
 [health-checks]: https://posthog.com/handbook/cs-and-onboarding/health-checks
 [foundation-check]: https://posthog.com/handbook/cs-and-onboarding/foundation-check
+[replay-privacy]: https://posthog.com/docs/session-replay/privacy
+[replay-controls]: https://posthog.com/docs/session-replay/how-to-control-which-sessions-you-record
