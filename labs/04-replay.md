@@ -57,7 +57,7 @@ Wait a minute or two, then open **Session replay** in PostHog.
 
 ## 3. Watch the recording
 
-Open your recording and work through four things.
+Open your recording and work through three things.
 
 The rage-click: the activity timeline flags it as `$rageclick`, so jump
 straight there. This is the workflow for "users say the checkout is
@@ -73,10 +73,6 @@ direct PostHog host, either `us.i.posthog.com` or the EU equivalent.
 Remember this exact click-path, because the
 [basic implementation review][foundation-check] uses it to check whether
 a customer has a reverse proxy, and so will you in the drills.
-
-Network and console capture: note the recording includes console logs and
-network timing, which is the debugging context most customers don't
-realize they're getting.
 
 ## 4. Filter recordings
 
