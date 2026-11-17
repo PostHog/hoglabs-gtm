@@ -175,7 +175,8 @@ every event, flag check, and replay upload 404s against Next.js. So do
 these together:
 
 1. In `next.config.js`, uncomment the rewrites block at the LAB 05 and
-   DRILL 9 marker, swapping `us` for `eu` if your project is in the EU.
+   DRILL 9 marker, swapping `us` for `eu` in all three destinations if
+   your project is in the EU.
 2. In `instrumentation-client.js`:
 
 ```js

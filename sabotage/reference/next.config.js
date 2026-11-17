@@ -17,6 +17,10 @@ const nextConfig = {
         destination: `${PH_ASSETS}/static/:path*`,
       },
       {
+        source: '/ingest/array/:path*',
+        destination: `${PH_ASSETS}/array/:path*`,
+      },
+      {
         source: '/ingest/:path*',
         destination: `${PH_HOST}/:path*`,
       },

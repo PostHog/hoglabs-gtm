@@ -6,7 +6,8 @@ const nextConfig = {
   // Uncommenting the rewrites below routes all PostHog traffic
   // through YOUR domain (localhost:3000/ingest) instead of
   // *.i.posthog.com — which is what defeats ad blockers.
-  // If your project is in the EU region, swap us → eu below.
+  // If your project is in the EU region, swap us → eu in all three
+  // destinations below.
   //
   // BOTH EDITS OR NEITHER: if instrumentation-client.js says
   // `api_host: '/ingest'` while these rewrites are still commented out,
@@ -21,6 +22,10 @@ const nextConfig = {
   //     {
   //       source: '/ingest/static/:path*',
   //       destination: 'https://us-assets.i.posthog.com/static/:path*',
+  //     },
+  //     {
+  //       source: '/ingest/array/:path*',
+  //       destination: 'https://us-assets.i.posthog.com/array/:path*',
   //     },
   //     {
   //       source: '/ingest/:path*',
