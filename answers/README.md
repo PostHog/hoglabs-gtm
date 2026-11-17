@@ -12,7 +12,7 @@ a lab, or when stuck:
 |---|---|
 | 01 instrument | `instrumentation-client.js`, `lib/posthog-server.js`, `app/habits/page.jsx`, `components/InviteForm.jsx`, `components/CookieBanner.jsx`, `app/api/checkin/route.js` |
 | 02 identity | `app/signup/page.jsx`, `app/api/signup/route.js`, `components/Nav.jsx`, `app/api/checkin/route.js` (groups) |
-| 05 flags | `app/providers.jsx`, `app/upgrade/page.jsx`, `app/api/flags/route.js`, `lib/posthog-server.js` (personalApiKey), `next.config.js`, `instrumentation-client.js` (api_host) |
+| 05 flags | `app/providers.jsx`, `app/upgrade/page.jsx`, `app/api/flags/route.js`, `lib/posthog-server.js` (secretKey), `next.config.js`, `instrumentation-client.js` (api_host) |
 | 06 experiments | `app/upgrade/page.jsx` (variant + capture) |
 
 Labs 03 and 04 are UI work — their "answer key" is the **Done when**

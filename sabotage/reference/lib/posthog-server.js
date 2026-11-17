@@ -12,10 +12,12 @@ export function getPostHogServer() {
       // proxy — ad blockers live in browsers, not on your server.
       host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
 
-      // Lab 05, step 5: the personal API key lets posthog-node fetch
-      // flag definitions and evaluate them locally, in-process.
+      // Lab 05, step 5: the project secret API key (phs_, scope
+      // feature_flag:read) lets posthog-node fetch flag definitions and
+      // evaluate them locally, in-process. `secretKey` needs
+      // posthog-node 5.40.0+; older versions call it personalApiKey.
       // Server-only secret — never NEXT_PUBLIC_ (drill 12).
-      personalApiKey: process.env.POSTHOG_PERSONAL_API_KEY,
+      secretKey: process.env.POSTHOG_SECRET_API_KEY,
 
       // Dev-friendly: send every event immediately instead of
       // batching. In production you'd let batching work and call
